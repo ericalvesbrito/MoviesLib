@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oaO-JH-Ef5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xIh-Oy-c0D">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -111,7 +111,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toystory3" translatesAutoresizingMaskIntoConstraints="NO" id="90c-W7-pdH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="90c-W7-pdH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="324.66666666666669"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="CeK-oj-jio">
@@ -120,13 +120,13 @@
                                     <constraint firstAttribute="height" constant="60" id="RfL-ey-4Ob"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toy Story 3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQV-F9-VZe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQV-F9-VZe">
                                 <rect key="frame" x="16" y="324.66666666666669" width="343" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação | Comédia | Animação" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNV-Vt-kYb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categorias" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNV-Vt-kYb">
                                 <rect key="frame" x="16" y="364.33333333333331" width="289" height="15.666666666666686"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -168,7 +168,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h8Z-vy-EH8">
                                         <rect key="frame" x="16" y="37.666666666666686" width="343" height="310"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -262,7 +261,7 @@
         <!--Cadastro de Filmes-->
         <scene sceneID="WcO-xB-vux">
             <objects>
-                <viewController id="oaO-JH-Ef5" sceneMemberID="viewController">
+                <viewController id="oaO-JH-Ef5" customClass="MovieFormViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="US6-lx-8I7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,6 +303,9 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="26" id="Tdk-IU-LvA"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <segue destination="sCY-W6-BKi" kind="show" id="okq-fO-3H4"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDn-ao-2A8">
                                                                 <rect key="frame" x="35" y="0.0" width="300" height="23.666666666666668"/>
@@ -319,6 +321,9 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTF-pm-6Ik">
                                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
                                                                 <state key="normal" title="Selecionar Imagem"/>
+                                                                <connections>
+                                                                    <action selector="selectImage:" destination="oaO-JH-Ef5" eventType="touchUpInside" id="F5E-rt-BQY"/>
+                                                                </connections>
                                                             </button>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-e9-Z3X">
                                                                 <rect key="frame" x="0.0" y="30.000000000000028" width="335" height="140"/>
@@ -359,6 +364,9 @@
                                                         <state key="normal" title="Cadastrar">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="save:" destination="oaO-JH-Ef5" eventType="touchUpInside" id="pYu-k9-SdY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -392,26 +400,63 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AJu-wf-C8F"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cadastro de Filmes" largeTitleDisplayMode="never" id="R9w-Lz-UZh"/>
+                    <navigationItem key="navigationItem" title="Cadastro de Filmes" largeTitleDisplayMode="never" id="R9w-Lz-UZh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="sv9-Qa-rgy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonSave" destination="XdQ-P5-Pmw" id="EUl-TF-ve5"/>
+                        <outlet property="imageViewPoster" destination="IC0-e9-Z3X" id="p5a-1G-7NI"/>
+                        <outlet property="labelCategories" destination="bDn-ao-2A8" id="Pql-p9-cK4"/>
+                        <outlet property="scrollView" destination="f4w-Cv-MUG" id="NMT-Gy-SGn"/>
+                        <outlet property="textFieldDuration" destination="Hm2-v1-2QY" id="f82-0S-Yl7"/>
+                        <outlet property="textFieldRating" destination="z2I-p0-Y9c" id="7WD-ap-9Kc"/>
+                        <outlet property="textFieldTitle" destination="6od-HI-iFG" id="g4K-R0-psO"/>
+                        <outlet property="textViewSummary" destination="0su-Vu-PgI" id="Jrw-9X-wm0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I78-M0-ihc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="836" y="-277.09359605911334"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="PXI-ne-tYE">
+        <!--Categorias-->
+        <scene sceneID="AEW-fG-O1d">
             <objects>
-                <viewController id="5Wq-2q-QFC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fwy-UT-oFi">
+                <tableViewController id="sCY-W6-BKi" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FaG-hM-WFT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="M1m-Cw-JfI"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XRF-tF-gPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="MdA-gI-Xng" style="IBUITableViewCellStyleDefault" id="G1U-zb-0WB">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G1U-zb-0WB" id="fGc-D4-M4k">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MdA-gI-Xng">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sCY-W6-BKi" id="X6W-O3-eyW"/>
+                            <outlet property="delegate" destination="sCY-W6-BKi" id="ajk-i5-edO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Categorias" id="UI1-Do-XRX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xkq-cG-tbh"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klS-Bx-WWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1662" y="-277"/>
+            <point key="canvasLocation" x="1588" y="-277"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hbv-CA-hKQ">
@@ -438,7 +483,6 @@
     <resources>
         <image name="gradient" width="600" height="120"/>
         <image name="play" width="53" height="53"/>
-        <image name="toystory3" width="400" height="330"/>
         <namedColor name="Main">
             <color red="1" green="0.76499998569488525" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
