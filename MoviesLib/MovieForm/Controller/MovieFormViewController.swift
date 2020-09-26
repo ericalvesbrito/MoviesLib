@@ -22,6 +22,15 @@ final class MovieFormViewController: UIViewController {
     
     // MARK: - Properties
     var movie: Movie?
+    var selectedCategories: Set<Category> = [] {
+        didSet {
+            if selectedCategories.count > 0 {
+                labelCategories.text = selectedCategories.compactMap({$0.name}).sorted().joined(separator: " | ")
+            } else {
+                labelCategories.text = "Categorias"
+            }
+        }
+    }
     
     // MARK: - Super Methods
     override func viewDidLoad() {
@@ -38,6 +47,13 @@ final class MovieFormViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CategoriesTableViewController {
+            vc.delegate = self
+            vc.selectedCategories = selectedCategories
+        }
     }
     
     // MARK: - IBActions
@@ -77,6 +93,7 @@ final class MovieFormViewController: UIViewController {
         let rating = Double(textFieldRating.text!) ?? 0
         movie?.rating = rating
         movie?.image = imageViewPoster.image?.jpegData(compressionQuality: 0.9)
+        movie?.categories = selectedCategories as NSSet?
         
         view.endEditing(true)
         do {
@@ -104,6 +121,9 @@ final class MovieFormViewController: UIViewController {
             textViewSummary.text = movie.summary
             buttonSave.setTitle("Alterar", for: .normal)
             imageViewPoster.image = movie.poster
+            if let categories = movie.categories as? Set<Category>, categories.count > 0 {
+                selectedCategories = categories
+            }
         }
     }
     
@@ -129,5 +149,11 @@ extension MovieFormViewController: UIImagePickerControllerDelegate, UINavigation
         }
         
         dismiss(animated: true, completion: nil)
+    }
+}
+
+extension MovieFormViewController: CategoriesDelegate {
+    func setSelectedCategories(_ categories: Set<Category>) {
+        selectedCategories = categories
     }
 }
