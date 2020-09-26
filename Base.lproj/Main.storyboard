@@ -299,7 +299,7 @@
         <!--Configurações-->
         <scene sceneID="qWy-cU-hXu">
             <objects>
-                <viewController id="PxN-L0-g9K" sceneMemberID="viewController">
+                <viewController id="PxN-L0-g9K" customClass="SettingsViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ws-gr-97c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -314,6 +314,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-zH-n0Q">
                                 <rect key="frame" x="284" y="104" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="autoplayChanged:" destination="PxN-L0-g9K" eventType="valueChanged" id="n5T-Ye-Yz0"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Esquema de cores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yB-Ty-0t1">
                                 <rect key="frame" x="29" y="167" width="236" height="21"/>
@@ -330,6 +333,9 @@
                                     <segment title="Laranja"/>
                                     <segment title="Azul"/>
                                 </segments>
+                                <connections>
+                                    <action selector="colorChanged:" destination="PxN-L0-g9K" eventType="valueChanged" id="GyJ-ig-biC"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoria favorita de filmes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc7-Pc-aWv">
                                 <rect key="frame" x="29" y="258" width="302" height="21"/>
@@ -343,12 +349,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="categoryChanged:" destination="PxN-L0-g9K" eventType="primaryActionTriggered" id="4s4-15-Bs6"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QrX-dQ-HZs"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="8Tt-XA-hw0"/>
+                    <connections>
+                        <outlet property="segmentedControlColors" destination="ZLc-7r-o12" id="Q9m-Yr-yu8"/>
+                        <outlet property="switchAutoplay" destination="MxH-zH-n0Q" id="Vlv-ZR-5Am"/>
+                        <outlet property="textFieldCategory" destination="Qtk-Ai-0kJ" id="YAB-G4-OHS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsA-mx-IH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
