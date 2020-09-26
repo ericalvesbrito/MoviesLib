@@ -69,6 +69,7 @@
 		2205164D251AB2F500E0D96B /* MoviesLib */ = {
 			isa = PBXGroup;
 			children = (
+				22D0DE1D251FCA3800C740B8 /* Map */,
 				22D0DE19251FB0E000C740B8 /* Categories */,
 				2205166A251D551E00E0D96B /* Main */,
 				22051675251D711D00E0D96B /* MovieListing */,
@@ -195,6 +196,13 @@
 				22D0DE1B251FB11600C740B8 /* CategoriesTableViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		22D0DE1D251FCA3800C740B8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
