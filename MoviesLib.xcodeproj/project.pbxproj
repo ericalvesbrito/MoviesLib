@@ -21,6 +21,7 @@
 		22D0DE1C251FB11700C740B8 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0DE1B251FB11600C740B8 /* CategoriesTableViewController.swift */; };
 		22D0DE20251FCA7A00C740B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0DE1F251FCA7A00C740B8 /* MapViewController.swift */; };
 		22D0DE24251FD90700C740B8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0DE23251FD90700C740B8 /* SettingsViewController.swift */; };
+		22D0DE26251FDC7C00C740B8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22D0DE25251FDC7C00C740B8 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		22D0DE1B251FB11600C740B8 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		22D0DE1F251FCA7A00C740B8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		22D0DE23251FD90700C740B8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		22D0DE25251FDC7C00C740B8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				22D0DE10251F639900C740B8 /* MoviesLib.xcdatamodeld */,
+				22D0DE25251FDC7C00C740B8 /* Settings.bundle */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D0DE26251FDC7C00C740B8 /* Settings.bundle in Resources */,
 				2205165B251AB2F700E0D96B /* LaunchScreen.storyboard in Resources */,
 				22051658251AB2F700E0D96B /* Assets.xcassets in Resources */,
 				22051656251AB2F500E0D96B /* Main.storyboard in Resources */,
