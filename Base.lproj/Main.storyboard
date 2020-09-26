@@ -421,13 +421,13 @@
         <!--Categorias-->
         <scene sceneID="AEW-fG-O1d">
             <objects>
-                <tableViewController id="sCY-W6-BKi" sceneMemberID="viewController">
+                <tableViewController id="sCY-W6-BKi" customClass="CategoriesTableViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FaG-hM-WFT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="MdA-gI-Xng" style="IBUITableViewCellStyleDefault" id="G1U-zb-0WB">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="MdA-gI-Xng" style="IBUITableViewCellStyleDefault" id="G1U-zb-0WB">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G1U-zb-0WB" id="fGc-D4-M4k">
@@ -451,7 +451,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Categorias" id="UI1-Do-XRX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xkq-cG-tbh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xkq-cG-tbh">
+                            <connections>
+                                <action selector="add:" destination="sCY-W6-BKi" id="tLJ-Zn-mIk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klS-Bx-WWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

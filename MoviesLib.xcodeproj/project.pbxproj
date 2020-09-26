@@ -18,6 +18,7 @@
 		22D0DE12251F639900C740B8 /* MoviesLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22D0DE10251F639900C740B8 /* MoviesLib.xcdatamodeld */; };
 		22D0DE16251F83C500C740B8 /* MovieFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0DE15251F83C500C740B8 /* MovieFormViewController.swift */; };
 		22D0DE18251F92B700C740B8 /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0DE17251F92B700C740B8 /* UIViewController+Context.swift */; };
+		22D0DE1C251FB11700C740B8 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0DE1B251FB11600C740B8 /* CategoriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		22D0DE11251F639900C740B8 /* MoviesLib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoviesLib.xcdatamodel; sourceTree = "<group>"; };
 		22D0DE15251F83C500C740B8 /* MovieFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFormViewController.swift; sourceTree = "<group>"; };
 		22D0DE17251F92B700C740B8 /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
+		22D0DE1B251FB11600C740B8 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		2205164D251AB2F500E0D96B /* MoviesLib */ = {
 			isa = PBXGroup;
 			children = (
+				22D0DE19251FB0E000C740B8 /* Categories */,
 				2205166A251D551E00E0D96B /* Main */,
 				22051675251D711D00E0D96B /* MovieListing */,
 				2205166D251D559300E0D96B /* MovieVisualization */,
@@ -178,6 +181,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		22D0DE19251FB0E000C740B8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				22D0DE1A251FB0F700C740B8 /* Controller */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		22D0DE1A251FB0F700C740B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22D0DE1B251FB11600C740B8 /* CategoriesTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,6 +274,7 @@
 				22D0DE16251F83C500C740B8 /* MovieFormViewController.swift in Sources */,
 				2205167E251D7D7600E0D96B /* Movie+RatingFormatted.swift in Sources */,
 				22051653251AB2F500E0D96B /* MovieViewController.swift in Sources */,
+				22D0DE1C251FB11700C740B8 /* CategoriesTableViewController.swift in Sources */,
 				22D0DE18251F92B700C740B8 /* UIViewController+Context.swift in Sources */,
 				2205164F251AB2F500E0D96B /* AppDelegate.swift in Sources */,
 			);
