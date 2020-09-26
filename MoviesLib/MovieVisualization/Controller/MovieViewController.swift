@@ -32,6 +32,7 @@ final class MovieViewController: UIViewController {
         labelRating.text = movie.ratingFormatted
         labelDuration.text = movie.duration
         textViewSummary.text = movie.summary
+        imageViewPoster.image = movie.poster
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

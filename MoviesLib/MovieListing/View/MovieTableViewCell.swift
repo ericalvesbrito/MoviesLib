@@ -22,6 +22,7 @@ class MovieTableViewCell: UITableViewCell {
         labelTitle.text = movie.title
         labelRating.text = movie.ratingFormatted
         labelSummary.text = movie.summary
+        imageViewPoster.image = movie.poster
     }
 
 }

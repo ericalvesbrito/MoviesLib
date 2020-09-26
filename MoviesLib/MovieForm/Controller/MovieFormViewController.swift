@@ -103,9 +103,7 @@ final class MovieFormViewController: UIViewController {
             textFieldDuration.text = movie.duration
             textViewSummary.text = movie.summary
             buttonSave.setTitle("Alterar", for: .normal)
-            if let data = movie.image {
-                imageViewPoster.image = UIImage(data: data)
-            }
+            imageViewPoster.image = movie.poster
         }
     }
     
