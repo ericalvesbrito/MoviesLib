@@ -261,7 +261,7 @@
         <!--Mapa-->
         <scene sceneID="tVM-0w-3gT">
             <objects>
-                <viewController id="6iA-Oc-0v4" sceneMemberID="viewController">
+                <viewController id="6iA-Oc-0v4" customClass="MapViewController" customModule="MoviesLib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="81V-Rb-R5v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,7 +269,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D4O-aY-eHG">
                                 <rect key="frame" x="0.0" y="100" width="375" height="629"/>
                             </mapView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="A1v-ct-KLM">
+                            <searchBar contentMode="redraw" placeholder="O que você quer procurar?" translatesAutoresizingMaskIntoConstraints="NO" id="A1v-ct-KLM">
                                 <rect key="frame" x="0.0" y="44" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -287,6 +287,10 @@
                         <viewLayoutGuide key="safeArea" id="aHF-nX-MON"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" image="map.fill" catalog="system" id="Phv-fk-fsj"/>
+                    <connections>
+                        <outlet property="mapView" destination="D4O-aY-eHG" id="wyP-68-Pem"/>
+                        <outlet property="searchBar" destination="A1v-ct-KLM" id="qRv-uP-YT8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UcS-Dd-ThQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
