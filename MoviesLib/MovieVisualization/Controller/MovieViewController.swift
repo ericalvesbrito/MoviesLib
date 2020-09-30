@@ -83,6 +83,7 @@ final class MovieViewController: UIViewController {
         DispatchQueue.main.async {
             self.moviePlayerController = AVPlayerViewController()
             self.moviePlayerController?.player = self.moviePlayer
+            //self.moviePlayerController?.showsPlaybackControls = false
             
             guard let movieView = self.moviePlayerController?.view else {return}
             movieView.frame = self.viewTrailer.bounds
